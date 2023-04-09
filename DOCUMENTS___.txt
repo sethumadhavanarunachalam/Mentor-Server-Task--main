@@ -1,0 +1,68 @@
+TASK QUERIES
+
+1. Write API to create Mentor
+
+https://mentor-and-student-assigning-db.vercel.app/mentor/add
+
+https://mentor-and-student-assigning-db.vercel.app/mentor/all --> to get particular Mentor's details :use a query (or) it will give all Mentor's data
+
+
+
+
+
+
+
+2 .Write API to create Student
+
+https://mentor-and-student-assigning-db.vercel.app/student/add
+
+https://mentor-and-student-assigning-db.vercel.app/student/all --> to get particular students's details :use a query (or) it will give all student's data
+
+https://mentor-and-student-assigning-db.vercel.app/mentorless --> use this get details of students who has      "NO MENTOR"
+
+
+
+
+
+
+
+
+
+
+3 .Write API to Assign a student to Mentor
+
+---------->Select one mentor and Add multiple Student 
+
+                https://mentor-and-student-assigning-db.vercel.app/mentor/addstudent 
+
+                e.g--> req. body ------------
+
+                {
+                    "mentor":"Sanjay",
+                     "students":["Jayavel","ArunPraveen"]   
+                }
+
+
+---------->A student who has a mentor should not be shown in List
+
+            https://mentor-and-student-assigning-db.vercel.app/mentorless --> use this get details of students who has      "NO MENTOR"
+
+
+
+
+
+
+
+
+4 .Write API to Assign or Change Mentor for particular Student
+---------->Select One Student and Assign one Mentor
+
+https://mentor-and-student-assigning-db.vercel.app/student/mentor 
+
+
+
+
+
+5 .Write API to show all students for a particular mentor
+
+https://mentor-and-student-assigning-db.vercel.app/mentor/students?name=<name of the mentor>
